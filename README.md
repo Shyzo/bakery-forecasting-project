@@ -1,4 +1,4 @@
-# 🥖 Bakery Sales Forecasting
+# 🥖 Bakery Sales Forecasting  ( Republished ) 
 
 ## 📋 Project Overview
 
@@ -14,12 +14,12 @@ The goal is to predict daily revenue to adjust production levels, minimize food 
 * **Enrichment:** Integrating weather data via the `Meteostat` API.
 * **Cleaning:** Outlier detection, handling closed days, and fixing data entry errors.
 
-### 2. Exploratory Data Analysis (`AnalyseV2.ipynb`)
+### 2. Exploratory Data Analysis (`Analyse.ipynb`)
 * Seasonality analysis (ACF/PACF).
 * Correlation study (Weather vs. Sales).
 * Weekly and monthly trend visualization.
 
-### 3. Modeling (`AI_modelV2.ipynb`)
+### 3. Modeling (`AI_model.ipynb`)
 Comparison of multiple approaches using **Time Series Cross-Validation**:
 * **Baseline:** Lag 5.
 * **Machine Learning:** XGBoost (Selected) vs. Random Forest.
