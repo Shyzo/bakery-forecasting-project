@@ -4,6 +4,11 @@ import re
 from datetime import datetime
 from meteostat import Stations, Daily
 
+#No need to execute this script, it was used to generate the SalesDATA.csv file
+
+
+
+
 #extract sales data from PDF
 def extract_data_from_pdf(pdf_path):
     data = []
@@ -25,7 +30,7 @@ def extract_data_from_pdf(pdf_path):
 
 #extract sales data from the two PDF reports
 data_1 = extract_data_from_pdf("DATASET1.pdf")
-data_2 = extract_data_from_pdf("DATASET3.pdf")
+data_2 = extract_data_from_pdf("DATASET2.pdf")
 
 #combine and clean sales DataFrame
 df_ventes = pd.DataFrame(data_1 + data_2, columns=["Date", "Nb_Produit", "CA", "Nb_Clients", "Vente_Moyenne"])
