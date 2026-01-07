@@ -7,6 +7,14 @@ The goal is to predict daily revenue to adjust production levels, minimize food 
 
 **Key Result:** The final model reduces forecasting uncertainty by **23%** compared to a naive baseline.
 
+## 🚧 Limitations & Future Improvements
+
+**Granularity Constraint:**
+Ideally, this model would predict sales at the **product level** (e.g., number of baguettes vs. pastries) rather than global revenue. However, due to the **technical limitations of the bakery's current Point of Sale (POS) system**, extracting granular item-level data is currently not feasible. 
+
+**Next Steps:**
+* If the data infrastructure allows it in the future, shifting to item-level forecasting would significantly improve inventory management precision.
+
 ## 🛠️ Technical Architecture
 
 ### 1. Data Engineering (`CSV_Generator.py`)
